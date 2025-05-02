@@ -21,29 +21,31 @@ This dataset contains structured and cleaned information about grants awarded by
 
 
 🛠 Methodology:
-Scraping Strategy:
+
+1. Scraping Strategy:
 
 Used BeautifulSoup to parse both the main grants listing pages and individual grant detail pages.
 
 Pagination was handled dynamically using the “See Next 10” button and its href.
 
-Structured Data Extracted:
+2. Structured Data Extracted:
 
 Grant Title, Link, Amount, Award Date, Term, Focus Area, Address
 
-Unstructured Data Extracted:
+3. Unstructured Data Extracted:
 
 Full Description (cleaned of prefixes and punctuation)
 
 
 🧼 Preprocessing & Cleaning:
-Removed HTML tags and non-textual noise
 
-Removed redundant prefixes (Awarded, Term, Description: etc.)
+1. Removed HTML tags and non-textual noise
 
-Cleaned amount field (removed $ and commas)
+2. Removed redundant prefixes (Awarded, Term, Description: etc.)
 
-Extracted Duration (Months) from Term column
+3. Cleaned amount field (removed $ and commas)
 
-Classified grants as Short-term (< 12 months) or Long-term (>= 12 months)
+4. Extracted Duration (Months) from Term column
+
+5. Classified grants as Short-term (< 12 months) or Long-term (>= 12 months)
 
