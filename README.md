@@ -20,13 +20,13 @@ The objective of this project was to extract, clean, and analyze grant-related d
 | `Address`              | Location of the grantee organization |
 
 
-🔍 Data Collection Strategy
+## 🔍 Data Collection Strategy
 
 Base URL: As given in the assignment details page
 
 Pagination Handling: Followed the See Next 10 button dynamically using the href inside <button class="btn_pagination">.
 
-Data Extracted From Listing Page:
+### Data Extracted From Listing Page:
 
 1. Grant title
 
@@ -38,7 +38,7 @@ Data Extracted From Listing Page:
 
 5. Link to detailed page
 
-Data Extracted From Detail Page:
+### Data Extracted From Detail Page:
 
 1. Full description
 
@@ -48,7 +48,7 @@ Data Extracted From Detail Page:
 
 4. Address
 
-🧼 Data Cleaning
+## 🧼 Data Cleaning
 1. Removed duplicate rows
 
 2. Removed redundant prefixes like Awarded, Term, Description:, and Address: from respective columns.
@@ -59,7 +59,7 @@ Data Extracted From Detail Page:
 
 5. Extracted duration in months from the term and created a new field: Duration (Months).
 
-⏳ Duration Classification
+## ⏳ Duration Classification
 Each grant was classified as:
 
 1. Short-term if duration < 18 months
@@ -68,7 +68,7 @@ Each grant was classified as:
 
 👉 This cutoff was updated mid-project from 12 months to 18 months to better reflect funding cycles.
 
-🧠 Unstructured Data Processing
+## 🧠 Unstructured Data Processing
 - Used nltk to tokenize the Full Description field.
 
 - Removed stopwords and non-alphabetic noise.
@@ -79,8 +79,8 @@ Each grant was classified as:
 
 - Each grant was assigned one or more thematic tags based on keyword presence.
 
-📊 Visualizations & Analysis
-Structured Data:
+## 📊 Visualizations & Analysis
+### Structured Data:
 
 📌 Count of grants per Focus Area
 
@@ -90,7 +90,7 @@ Structured Data:
 
 💼 Total grant themes across all descriptions
 
-Unstructured Data:
+### Unstructured Data:
 
 🔑 Top 20 most frequent keywords in descriptions (bar plot)
 
@@ -98,7 +98,7 @@ Unstructured Data:
 
 📚 Thematic bar chart showing grants per dominant theme
 
-All visualizations were styled using Seaborn and Matplotlib, and include:
+### All visualizations were styled using Seaborn and Matplotlib, and include:
 
 1. Clean fonts and spacing
 
