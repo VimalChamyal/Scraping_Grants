@@ -3,8 +3,10 @@ A short exercise wherein I am scraping grants from a website as a take home assi
 
 Tools Used: Python, BeautifulSoup, Pandas, NLTK, Colab
 
+<br>
 ## Description:
 The objective of this project was to extract, clean, and analyze grant-related data from the Rf Grants page. The goal was to gather both structured (amounts, dates, categories) and unstructured (descriptions, themes) data to derive meaningful insights and visualize trends.
+<br>
 
 ## 📊 Fields:
 | Column Name           | Description |
@@ -19,6 +21,7 @@ The objective of this project was to extract, clean, and analyze grant-related d
 | `Full Description`     | Cleaned narrative about the purpose and goals of the grant |
 | `Address`              | Location of the grantee organization |
 
+<br>
 
 ## 🔍 Data Collection Strategy
 
@@ -48,6 +51,8 @@ Pagination Handling: Followed the See Next 10 button dynamically using the href 
 
 4. Address
 
+<br>
+
 ## 🧼 Data Cleaning
 1. Removed duplicate rows
 
@@ -59,6 +64,8 @@ Pagination Handling: Followed the See Next 10 button dynamically using the href 
 
 5. Extracted duration in months from the term and created a new field: Duration (Months).
 
+<br>
+
 ## ⏳ Duration Classification
 Each grant was classified as:
 
@@ -67,6 +74,8 @@ Each grant was classified as:
 2. Long-term if duration ≥ 18 months
 
 👉 This cutoff was updated mid-project from 12 months to 18 months to better reflect funding cycles.
+
+<br>
 
 ## 🧠 Unstructured Data Processing
 - Used nltk to tokenize the Full Description field.
@@ -78,6 +87,8 @@ Each grant was classified as:
 - Defined theme keyword buckets for Health, Climate, Equity, and Technology.
 
 - Each grant was assigned one or more thematic tags based on keyword presence.
+
+<br>
 
 ## 📊 Visualizations & Analysis
 ### Structured Data:
