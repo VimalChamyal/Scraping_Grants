@@ -3,10 +3,10 @@ A short exercise wherein I am scraping grants from a website as a take home assi
 
 Tools Used: Python, BeautifulSoup, Pandas, NLTK, Colab
 
-📌 Description:
+## Description:
 The objective of this project was to extract, clean, and analyze grant-related data from the Rf Grants page. The goal was to gather both structured (amounts, dates, categories) and unstructured (descriptions, themes) data to derive meaningful insights and visualize trends.
 
-📊 Fields:
+## 📊 Fields:
 | Column Name           | Description |
 |------------------------|-------------|
 | `Title`                | Name of the grant |
